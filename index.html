@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCSS</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <!--
+    SCSS is a language very similar to CSS
+    It gets compiled to CSS just like Typescript gets compiled to Javascript
+    The compiler program we are gonna use is called 'SASS'
+    It processes the SASS/SCSS files and turns them into regular CSS
+
+    Sass comes with several features.
+    One of the most interesting one is the ability to create modules.
+    Modules are great for:
+    - Reausibility ( styles are better structred and easier to reuse )
+    - Maintenance ( you can quickly lcate specific styles )
+    - Modularity ( each module represents a component or feature )
+
+    We need to install sass compiler
+    $ npm install -g sass
+    $ sass --version
+
+    Now we run:
+    $ sass --watch input.scss output.css
+    -->
+    <header>
+        <nav>
+            <a href="">Home</a> 
+            <a href="">About</a>
+            <a href="">Projects</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome</h1>
+        <section>
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam expedita suscipit,
+                 cum deserunt neque explicabo consequatur. Animi, placeat molestias, iure nostrum vitae
+                  officia quas exercitationem iste repellat, harum dolor laborum!</p>
+        </section>
+        <h2>Loops</h2>
+        
+         <!--  .item_{$}*3 -->
+        <div class="item_1 redBox">1</div>
+        <div class="item_2 blueBox">2</div>
+        <div class="item_3 greenBox">3</div>
+        
+        <div class="newItem_1">1</div>
+        <div class="newItem_2">2</div>
+        <div class="newItem_3">3</div>
+        <div class="newItem_4">4</div>
+        <div class="newItem_5">5</div>
+       
+        
+    </main>
+</body>
+</html>

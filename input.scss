@@ -1,0 +1,73 @@
+@use "_header.scss";
+
+$primary-color: #3498db; // This is a variable we just created
+$secondary-color: #2ecc71;
+$accent-color: #e74c3c;
+$neutral-color: #ecf0f1;
+
+$mainColor: $primary-color;
+$bgColor: $neutral-color;
+
+body {
+    font-family: sans-serif;
+    background-color: $bgColor;
+}
+
+h1 {
+    color: $primary-color;
+}
+
+p {
+    color: $primary-color;
+}
+
+/*
+the random() function is build in sass
+It generates a random number between 0 and the specified maximum
+*/
+
+main {
+    background-color: rgb(random(255), 200, random(255));
+    padding: 1rem;
+}
+
+/*
+Now we will use a loop to generate multiple css classes dynamically
+For that we use the @for directive
+*/
+
+.redBox {
+    background-color: red;
+}
+
+.blueBox {
+    background-color: blue;
+}
+
+.greenBox {
+    background-color: green;
+}
+
+@for $i from 1 through 3 {
+    .item_#{$i} {
+        width: $i * 100px;
+        padding: 1rem;
+    }
+}
+
+
+/*
+Class names are dynamically created
+This means that for each value of $i a class 
+named .item_1, .item_2 etc.. will be generated
+*/
+
+@for $i from 1 through 5 {
+    .newItem_#{$i} {
+        padding: $i * 10px;
+        $red: random(255);
+        $green: random(255);
+        $blue: random(255);
+        background-color: rgb($red, $green, $blue);
+    }
+}
