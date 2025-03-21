@@ -1,0 +1,92 @@
+nav {
+  background-color: green;
+}
+nav a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #ecf0f1;
+}
+
+h1 {
+  color: #3498db;
+}
+
+p {
+  color: #3498db;
+}
+
+/*
+the random() function is build in sass
+It generates a random number between 0 and the specified maximum
+*/
+main {
+  background-color: rgb(141, 200, 190);
+  padding: 1rem;
+}
+
+/*
+Now we will use a loop to generate multiple css classes dynamically
+For that we use the @for directive
+*/
+.redBox {
+  background-color: red;
+}
+
+.blueBox {
+  background-color: blue;
+}
+
+.greenBox {
+  background-color: green;
+}
+
+.item_1 {
+  width: 100px;
+  padding: 1rem;
+}
+
+.item_2 {
+  width: 200px;
+  padding: 1rem;
+}
+
+.item_3 {
+  width: 300px;
+  padding: 1rem;
+}
+
+/*
+Class names are dynamically created
+This means that for each value of $i a class 
+named .item_1, .item_2 etc.. will be generated
+*/
+.newItem_1 {
+  padding: 10px;
+  background-color: rgb(230, 108, 205);
+}
+
+.newItem_2 {
+  padding: 20px;
+  background-color: rgb(239, 149, 44);
+}
+
+.newItem_3 {
+  padding: 30px;
+  background-color: rgb(73, 190, 250);
+}
+
+.newItem_4 {
+  padding: 40px;
+  background-color: rgb(213, 179, 119);
+}
+
+.newItem_5 {
+  padding: 50px;
+  background-color: rgb(30, 253, 226);
+}
+
+/*# sourceMappingURL=output.css.map */
